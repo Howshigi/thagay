@@ -10,7 +10,31 @@ public class MainMenu : MonoBehaviour
 
     {
 
-        Debug.Log("Resume Game");
+        if (PlayerPrefs.HasKey("x"))
+
+        {
+
+            SceneManager.LoadScene("TestScene"); // หรือ GameScene
+
+        }
+
+        else
+
+        {
+
+            Debug.Log("No Save Data");
+
+        }
+
+    }
+
+    public void NewGame()
+
+    {
+
+        PlayerPrefs.DeleteAll(); // ล้าง checkpoint
+
+        SceneManager.LoadScene("TestScene"); // หรือ GameScene
 
     }
 
@@ -19,14 +43,6 @@ public class MainMenu : MonoBehaviour
     {
 
         Debug.Log("Load Game");
-
-    }
-
-    public void NewGame()
-
-    {
-
-        SceneManager.LoadScene("GameScene");
 
     }
 
@@ -65,4 +81,3 @@ public class MainMenu : MonoBehaviour
     }
 
 }
-

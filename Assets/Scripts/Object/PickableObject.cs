@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PickableObject : MonoBehaviour
 {
+    public float weight = 1f; 
+
     private Rigidbody rb;
 
     void Awake()

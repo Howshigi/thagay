@@ -124,10 +124,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 798346346030450232, guid: c221bd57a434686458ff58400160bd6f, type: 3}
   m_PrefabInstance: {fileID: 1188295254}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &110814831
-  serializedVersion: 2
-    m_Modifications:
-      propertyPath: m_LocalPosition.x
 --- !u!1 &153625162
 GameObject:
   m_ObjectHideFlags: 0
